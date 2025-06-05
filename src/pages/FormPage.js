@@ -197,9 +197,7 @@ const FormPage = () => {
         required
       />
 
-      {selectedDocType === 'Offer' && (
-        <>
-          <label>Joining Date</label>
+      <label>Joining Date</label>
           <input
             type="date"
             name="joining_date"
@@ -207,6 +205,10 @@ const FormPage = () => {
             onChange={handleChange}
             required
           />
+
+      {selectedDocType === 'Offer' && (
+        <>
+          
 
           <label>Package (Monthly CTC)</label>
           <input
